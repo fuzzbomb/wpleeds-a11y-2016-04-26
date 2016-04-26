@@ -375,6 +375,51 @@
   </section>
 
 
+<!-- Slide set: HTML semantics -->
+  <section>
+    <h2>Semantic HTML</h2>
+    <p>HTML is a great language for marking up <i>hypertext</i>.</p>
+    <ul>
+      <li>Document outline: headings, </li>
+      <li>Forms: fieldsets, labels, etc.</li>
+      <li>Regions: navigation, article, footer, ...</li>
+      <li>Tables, figures</li>
+      <li>embedded content: images, video, ...</li>
+    <ul>
+  </section>
+  <section>
+    <h3>HTML Elements</h3>
+    <p>HTML is <em>not</em> a general-purpose user-interface language, so developers often customize behaviour with javascript. Be careful what elements you use.</p>
+    <ul>
+      <li>&lt;div&gt; means <em>nothing</em></li>
+      <li>&lt;span&gt; means <em>nothing</em></li>
+      <li>&lt;button&gt; - pressing it makes something <em>happen</em>.</li>
+      <li>&lt;a href&gt; - hyperlinks direct you <em>somewhere else</em>.</li>
+    </ul>
+    <p>Button vs. Link. We'll run into that a lot.</p>
+  </section>
+  <section>
+    <h3>Human-readable semantics</h3>
+    <p>Some attributes often contain rich semantics, but are really only useful to a human audience: developers!</p>
+    <ul>
+      <li>class attribute</li>
+      <li>data-* attributes</li>
+      <li>ng-* attributes</li>
+      <li>Others?</li>
+    </ul>
+    <p>None are understood by screen-readers.</p>
+    <p><code>&lt;div class="button"&gt;</code> is <em>not a button</em>.<br />Use <code>&lt;button&gt;</code> instead.</p>
+  </section>
+  <section>
+    <h3>Semantics for screen-readers</h3>
+    <p>We want machine-readable semantics</p>
+    <ul>
+      <li>HTML Elements: headings, tables, forms, ...</li>
+      <li>HTML attributes: disabled, required, checked, ...</li>
+      <li>aria-* attributes</li>
+      <li>SVG, MathML.</li>
+    </ul>
+  </section>
 
 
 <!-- reading list -->
